@@ -8,5 +8,10 @@ namespace Sistema_Horus.Data
 {
     internal class CRUD
     {
+
+        public class Login()
+        {
+
+        }
     }
 }
