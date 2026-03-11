@@ -63,3 +63,5 @@ C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.
 C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.0-windows\Sistema_Horus.pdb
 C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.0-windows\Sistema_Horus.genruntimeconfig.cache
 C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.0-windows\ref\Sistema_Horus.dll
+C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.0-windows\Sistema_Horus.Properties.Resources.resources
+C:\Users\mende\Desktop\Sistema_Horus\Sistema_Horus\Sistema_Horus\obj\Debug\net8.0-windows\Sistema_Horus.sourcelink.json
