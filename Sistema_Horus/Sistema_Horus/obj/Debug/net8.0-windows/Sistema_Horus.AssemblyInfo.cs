@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema_Horus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+546a5ef001db3eba2d1dd6b348f219ccc8050c03")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema_Horus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema_Horus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
