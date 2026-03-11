@@ -10,7 +10,11 @@ namespace Sistema_Horus.Data
 {
     public class ConexionDB
     {
+<<<<<<< HEAD
         // Esta es otra prueba xd ssjdjjdjs
+=======
+        // Esta es una prueba de  mergeo y se entienda a que vamos
+>>>>>>> administrador
         private string conexion= "Server=MENDEZ\\SQLEXPRESS;Database=BD_Horus;Trusted_Connection=True;TrustServerCertificate=True;";
         public SqlConnection ObtenerConexion()
         {
