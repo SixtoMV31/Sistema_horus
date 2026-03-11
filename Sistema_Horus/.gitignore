@@ -7,10 +7,8 @@ obj/
 *.user
 *.suo
 *.cache
-*.dll
-*.exe
 
-# Build
+# Build results
 Debug/
 Release/
 
