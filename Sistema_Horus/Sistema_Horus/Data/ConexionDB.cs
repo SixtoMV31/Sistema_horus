@@ -10,10 +10,10 @@ namespace Sistema_Horus.Data
 {
     public class ConexionDB
     {
-        private string conexion= "Server=MENDEZ\\SQLEXPRESS;Database=BD_Horus;Trusted_Connection=True;TrustServerCertificate=True;";
-        public SqlConnection ObtenerConexion()
+        public static SqlConnection ObtenerConexion()
         {
-            SqlConnection conn = new SqlConnection(conexion);
+            SqlConnection conn = new SqlConnection("Server=CHARLY\\SQLEXPRESS;Database=BD_Horus;Trusted_Connection=True;TrustServerCertificate=True;");
+            conn.Open();
             return conn;
         }
     }

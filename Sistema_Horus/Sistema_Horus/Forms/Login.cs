@@ -11,21 +11,7 @@ namespace Sistema_Horus
 
         private void Login_Load(object sender, EventArgs e)
         {
-                ConexionDB conexion = new ConexionDB();
 
-                try
-                {
-                    var conn = conexion.ObtenerConexion();
-                    conn.Open();
-
-                    MessageBox.Show("Conexión exitosa con la base de datos");
-
-                    conn.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
             
         }
     }

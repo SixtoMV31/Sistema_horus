@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\ConexionDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sistema_Horus\\Data\\ConexionDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sistema_Horus\\Forms\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|c:\\users\\erick charly yahir\\desktop\\sistema_horus\\sistema_horus\\sistema_horus\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|c:\\users\\erick charly yahir\\desktop\\sistema_horus\\sistema_horus\\sistema_horus\\data\\punteros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\data\\punteros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sistema_horus\\forms\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|c:\\users\\erick charly yahir\\desktop\\sistema_horus\\sistema_horus\\sistema_horus\\data\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\data\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sistema_horus\\forms\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|c:\\users\\erick charly yahir\\desktop\\sistema_horus\\sistema_horus\\sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|c:\\users\\erick charly yahir\\desktop\\sistema_horus\\sistema_horus\\sistema_horus\\forms\\administrador\\empleadosr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\forms\\administrador\\empleadosr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\forms\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\sistema_horus\\forms\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F947A6EB-5493-44EC-91AA-A535EBA68D41}|Sistema_Horus\\Sistema_Horus.csproj|solutionrelative:sistema_horus\\forms\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,48 +50,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "EmpleadosR.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\administrador\\EmpleadosR.cs",
+              "RelativeDocumentMoniker": "Sistema_Horus\\Forms\\administrador\\EmpleadosR.cs",
+              "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\administrador\\EmpleadosR.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Horus\\Forms\\administrador\\EmpleadosR.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:18:59.331Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Punteros.cs",
+              "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\Punteros.cs",
+              "RelativeDocumentMoniker": "Sistema_Horus\\Data\\Punteros.cs",
+              "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\Punteros.cs",
+              "RelativeToolTip": "Sistema_Horus\\Data\\Punteros.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:18:03.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CRUD.cs",
+              "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\CRUD.cs",
+              "RelativeDocumentMoniker": "Sistema_Horus\\Data\\CRUD.cs",
+              "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\CRUD.cs",
+              "RelativeToolTip": "Sistema_Horus\\Data\\CRUD.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:17:42.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Sistema_Horus\\Forms\\Login.cs",
               "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs",
               "RelativeToolTip": "Sistema_Horus\\Forms\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T04:57:40.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ConexionDB.cs",
               "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\ConexionDB.cs",
               "RelativeDocumentMoniker": "Sistema_Horus\\Data\\ConexionDB.cs",
               "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Data\\ConexionDB.cs",
               "RelativeToolTip": "Sistema_Horus\\Data\\ConexionDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T04:57:40.783Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Sistema_Horus\\Forms\\Login.cs",
-              "ToolTip": "C:\\Users\\mende\\Desktop\\Sistema_Horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\mende\\Desktop\\Sistema_Horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2026-03-10T04:57:42.714Z"
+              "ToolTip": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Horus\\Forms\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T04:57:42.714Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Empleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Empleado.cs",
               "RelativeDocumentMoniker": "Sistema_Horus\\Forms\\Empleado.cs",
@@ -90,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Administrador.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Erick Charly Yahir\\Desktop\\Sistema_horus\\Sistema_Horus\\Sistema_Horus\\Forms\\Administrador.cs",
               "RelativeDocumentMoniker": "Sistema_Horus\\Forms\\Administrador.cs",
