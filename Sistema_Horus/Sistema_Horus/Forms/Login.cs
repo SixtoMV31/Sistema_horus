@@ -3,6 +3,7 @@ using Sistema_Horus.Forms;
 using Sistema_Horus.Forms.administrador;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
+using Sistema_Horus.Forms.administrador;
 
 namespace Sistema_Horus
 {
@@ -95,8 +96,8 @@ namespace Sistema_Horus
             this.Hide();
             if (rol == "Administrador")
             {
-                Administrador administrador = new Administrador();
-                administrador.Show();
+                Administrador FormAdmi = new Administrador();
+                FormAdmi.Show();
 
             }
             else if (rol == "Empleado")
