@@ -25,7 +25,7 @@ namespace Sistema_Horus.Data
             return retorno;
         }
 
-        // Consulta a BD para usuario y password
+        // Consulta a BD para usuario y password.
         public string Login(string usuario,string contrasena)
         {
             try
