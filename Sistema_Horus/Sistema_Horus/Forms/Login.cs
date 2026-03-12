@@ -1,4 +1,6 @@
 using Sistema_Horus.Data;
+using Sistema_Horus.Forms;
+using Sistema_Horus.Forms.administrador;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
 
@@ -9,36 +11,38 @@ namespace Sistema_Horus
         public Login()
         {
             InitializeComponent();
+            ActiveControl = Tb_User;
         }
 
         private void Login_Load(object sender, EventArgs e)
 
         {
+
             BordeText(Pa_user);
-            EstiloTextBox(Tb_User ,"Usuario");
-            EstiloTextBox(tb_contra ,"Contraseña");
-                ConexionDB conexion = new ConexionDB();
+            EstiloTextBox(Tb_User, "Usuario");
+            EstiloTextBox(tb_contra, "Contraseña");
+            ConexionDB conexion = new ConexionDB();
 
-                try
-                {
-                    var conn = conexion.ObtenerConexion();
-                    conn.Open();
+            try
+            {
+                var conn = conexion.ObtenerConexion();
+                conn.Open();
 
-                    MessageBox.Show("Conexión exitosa con la base de datos");
+                MessageBox.Show("Conexión exitosa con la base de datos");
 
-                    conn.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
         private void EstiloTextBox(TextBox tb, string placeholder)
         {
             int radio = 20;
             GraphicsPath path = new GraphicsPath();
-            Rectangle r = new Rectangle(0,0, tb.Width,tb.Height);
+            Rectangle r = new Rectangle(0, 0, tb.Width, tb.Height);
             path.AddArc(r.X, r.Y, radio, radio, 180, 90);
             path.AddArc(r.Right - radio, r.Y, radio, radio, 270, 90);
             path.AddArc(r.Right - radio, r.Bottom - radio, radio, radio, 0, 90);
@@ -62,7 +66,7 @@ namespace Sistema_Horus
                 if (tb.Text == "")// si el usario da click afuera volvemos a colocar el placeholder
                 {
                     tb.Text = placeholder;
-                    tb.ForeColor =Color.Gray;
+                    tb.ForeColor = Color.Gray;
                 }
             };
         }
@@ -78,5 +82,39 @@ namespace Sistema_Horus
             pathPanel.CloseFigure();
             pa_user.Region = new Region(pathPanel);
         }
+
+        private void btnIniciar_sesion_Click(object sender, EventArgs e)
+        {
+            CRUD crud = new CRUD();
+            string rol = crud.Login(Tb_User.Text, tb_contra.Text);
+            if (rol == null)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+                return;
+            }
+            this.Hide();
+            if (rol == "Administrador")
+            {
+                Administrador administrador = new Administrador();
+                administrador.Show();
+
+            }
+            else if (rol == "Empleado")
+            {
+                Empleado formEmpleado = new Empleado();
+                formEmpleado.Show();
+            }
+
+        }
+
+
+
+        //private void Tb_User_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //if (e.KeyCode == Keys.Enter)
+        //{
+        //tb_contra.Focus();
+        //}
+        // }
     }
 }

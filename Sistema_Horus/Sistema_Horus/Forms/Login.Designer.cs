@@ -35,6 +35,7 @@
             tb_contra = new TextBox();
             Pa_user = new Panel();
             Tb_User = new TextBox();
+            btnIniciar_sesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -110,11 +111,23 @@
             Tb_User.Size = new Size(280, 40);
             Tb_User.TabIndex = 3;
             // 
+            // btnIniciar_sesion
+            // 
+            btnIniciar_sesion.BackColor = Color.Goldenrod;
+            btnIniciar_sesion.Location = new Point(453, 314);
+            btnIniciar_sesion.Name = "btnIniciar_sesion";
+            btnIniciar_sesion.Size = new Size(283, 39);
+            btnIniciar_sesion.TabIndex = 7;
+            btnIniciar_sesion.Text = "Iniciar Sesion";
+            btnIniciar_sesion.UseVisualStyleBackColor = false;
+            btnIniciar_sesion.Click += btnIniciar_sesion_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnIniciar_sesion);
             Controls.Add(Pa_user);
             Controls.Add(pictureBox4);
             Controls.Add(tb_contra);
@@ -143,5 +156,6 @@
         private TextBox tb_contra;
         private Panel Pa_user;
         private TextBox Tb_User;
+        private Button btnIniciar_sesion;
     }
 }

@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace Sistema_Horus.Data
 {
-    internal class Punteros
+    public class Punteros
     {
+        // Tabla de Usuarios
+        public string Nombre { get; set; }
+        public string A_paterno { get; set; }
+        public string A_materno { get; set; }
+        public string Usuario { get; set; }
+        public string Contrasena { get; set; }
+        public string Rol { get; set; }
+
+        public Punteros() { }
+
+        public Punteros(string pNombre, string pA_paterno, string pA_materno, string pUsuario, string pContrasena, string pRol)
+        {
+            this.Nombre = pNombre;
+            this.A_paterno = pA_paterno;
+            this.A_materno = pA_materno;
+            this.Usuario = pUsuario;
+            this.Contrasena = pContrasena;
+            this.Rol = pRol;
+        }
     }
 }
