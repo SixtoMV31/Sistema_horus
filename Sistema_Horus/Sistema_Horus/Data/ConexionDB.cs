@@ -10,12 +10,12 @@ namespace Sistema_Horus.Data
 {
     public class ConexionDB
     {
+        private readonly string _conectionString = "Server=MENDEZ\\SQLEXPRESS;Database=BD_Horus;Trusted_Connection=True;TrustServerCertificate=True;";
         public SqlConnection ObtenerConexion()
         {
-            SqlConnection conn = new SqlConnection("Server=CHARLY\\SQLEXPRESS;Database=BD_Horus;Trusted_Connection=True;TrustServerCertificate=True;");
-            conn.Open();
+            SqlConnection conn = new SqlConnection(_conectionString);
+            //conn.Open();
             return conn;
         }
-        //a ver checa si funciono
     }
 }
