@@ -7,10 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sistema_Horus.Forms;
-using Sistema_Horus.Forms.administrador;
 
-namespace Sistema_Horus
+namespace Sistema_Horus.Forms.administrador
 {
     public partial class Administrador : Form
     {
@@ -19,10 +17,9 @@ namespace Sistema_Horus
             InitializeComponent();
         }
 
-        private void btnAgregarEmpleado_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            EmpleadosR registraEmpleado = new EmpleadosR();
-            registraEmpleado.Show();
+
         }
     }
 }
