@@ -29,7 +29,7 @@ namespace Sistema_Horus.Forms.administrador
         private void btnRegistrarEmpleados_Click(object sender, EventArgs e)
         {
             CRUD crud = new CRUD();
-            Punteros empleados = new Punteros();
+            Empleados empleados = new Empleados();
             empleados.Nombre = txtNombre.Text;
             empleados.A_paterno = txtApaterno.Text;
             empleados.A_materno = txtAmaterno.Text;

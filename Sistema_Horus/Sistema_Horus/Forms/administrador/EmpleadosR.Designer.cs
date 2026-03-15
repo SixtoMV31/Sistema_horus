@@ -142,7 +142,7 @@
             // 
             // btnRegistrarEmpleados
             // 
-            btnRegistrarEmpleados.Location = new Point(347, 260);
+            btnRegistrarEmpleados.Location = new Point(347, 279);
             btnRegistrarEmpleados.Name = "btnRegistrarEmpleados";
             btnRegistrarEmpleados.Size = new Size(98, 42);
             btnRegistrarEmpleados.TabIndex = 12;
@@ -168,6 +168,7 @@
             Controls.Add(txtContrasena);
             Controls.Add(txtAmaterno);
             Controls.Add(txtApaterno);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "EmpleadosR";
             Text = "EmpleadosR";
             Load += EmpleadosR_Load;
