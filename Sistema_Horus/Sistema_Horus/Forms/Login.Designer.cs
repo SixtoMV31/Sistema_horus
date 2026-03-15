@@ -110,6 +110,7 @@
             Tb_User.Name = "Tb_User";
             Tb_User.Size = new Size(280, 40);
             Tb_User.TabIndex = 3;
+           
             // 
             // btnIniciar_sesion
             // 

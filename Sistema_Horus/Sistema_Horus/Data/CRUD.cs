@@ -56,5 +56,26 @@ namespace Sistema_Horus.Data
                 return null;
             }
         }
+        public int RegistrarClientes(RegistrarClientes p_clientes)
+        {
+            int retorno = 0;
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                SqlCommand comando = new SqlCommand("Insert Into dbo.Clientes " +
+                    "(Nombre,A_paterno, A_materno,N_local, Telefono, Fecha_registro,Detalle) " +
+                    "VALUES (@Nombre,@A_paterno,@A_materno,@N_local,@Telefono,@Fecha_registro,@Detalle)", conn);
+                comando.Parameters.AddWithValue("@Nombre",p_clientes.NombreCliente);
+                comando.Parameters.AddWithValue("@A_paterno", p_clientes.A_PaternoCliente);
+                comando.Parameters.AddWithValue("@A_materno", p_clientes.A_MaternoCliente);
+                comando.Parameters.AddWithValue("@N_local", p_clientes.Nombre_Local);
+                comando.Parameters.AddWithValue("@Telefono", p_clientes.TelefonoCliente);
+                comando.Parameters.AddWithValue("@Fecha_registro", p_clientes.Fecha_Registro);
+                comando.Parameters.AddWithValue("@Detalle", p_clientes.Detalle_Clientte);
+
+                retorno = comando.ExecuteNonQuery();
+            }
+            return retorno;
+        }
     }
 }

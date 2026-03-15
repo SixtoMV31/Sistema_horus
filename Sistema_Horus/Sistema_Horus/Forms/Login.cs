@@ -1,4 +1,5 @@
 using Sistema_Horus.Data;
+using Sistema_Horus.Empleado;
 using Sistema_Horus.Forms;
 using Sistema_Horus.Forms.administrador;
 using System.Data.SqlClient;
@@ -101,11 +102,14 @@ namespace Sistema_Horus
             }
             else if (rol == "Empleado")
             {
-                Empleado formEmpleado = new Empleado();
-                formEmpleado.Show();
+                OpcionesEmpleadocs opcionesEmpleado = new OpcionesEmpleadocs();
+                opcionesEmpleado.Show();
             }
 
         }
+
+
+
 
 
 
