@@ -12,7 +12,7 @@ namespace Sistema_Horus.Data
         private readonly ConexionDB _conexion = new ConexionDB();
 
         // Registrar los empleados
-        public  int IngresarEmpleado(Punteros p_empleado)
+        public  int IngresarEmpleado(Empleados p_empleado)
         {
             int retorno = 0;
             using (SqlConnection conn = _conexion.ObtenerConexion())
@@ -24,6 +24,19 @@ namespace Sistema_Horus.Data
             }
             return retorno;
         }
+        public int AgregarProducto(Productos p_productos)
+        {
+            int retorno = 0;
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                SqlCommand comando = new SqlCommand(string.Format("Insert Into dbo.Productos (Nombre_producto,Cantidad, Modelo_Telefono,Precio_mayoreo, Precio_pase, Precio_unidad, Tipo) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", p_productos.Nombre, p_productos.Cantidad, p_productos.Modelo_telefono, p_productos.PrecioMayoreo, p_productos.PrecioPase, p_productos.PrecioUnidad, p_productos.Tipo), conn);
+
+                retorno = comando.ExecuteNonQuery();
+            }
+            return retorno;
+        }
+
 
         // Consulta a BD para usuario y password.
         public string Login(string usuario,string contrasena)

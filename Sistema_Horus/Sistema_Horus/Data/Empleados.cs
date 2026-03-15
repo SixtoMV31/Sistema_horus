@@ -8,8 +8,7 @@ namespace Sistema_Horus.Data
 
 {
 
-   
-    public class Punteros
+    public class Empleados
     {
         // Tabla de Usuarios
         public string Nombre { get; set; }
@@ -18,10 +17,14 @@ namespace Sistema_Horus.Data
         public string Usuario { get; set; }
         public string Contrasena { get; set; }
         public string Rol { get; set; }
-        public Punteros() { }
 
 
-        public Punteros(string pNombre, string pA_paterno, string pA_materno, string pUsuario, string pContrasena, string pRol)
+
+
+        public Empleados() { }
+
+        public Empleados(string pNombre, string pA_paterno, string pA_materno, string pUsuario, string pContrasena, string pRol)
+
         {
             this.Nombre = pNombre;
             this.A_paterno = pA_paterno;
@@ -31,7 +34,6 @@ namespace Sistema_Horus.Data
             this.Rol = pRol;
         }
 
-       
     }
     public class RegistrarClientes
     {

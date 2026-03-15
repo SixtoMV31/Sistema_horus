@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using Sistema_Horus.Data;
 using Sistema_Horus.Empleado;
 using Sistema_Horus.Forms;
@@ -108,8 +109,7 @@ namespace Sistema_Horus
 
         }
 
-
-
+       
 
 
 
