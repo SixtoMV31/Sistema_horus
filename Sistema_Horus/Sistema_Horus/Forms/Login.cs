@@ -109,7 +109,13 @@ namespace Sistema_Horus
 
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Administrador emp = new Administrador();
+            emp.Show();
+        }
+
+
 
 
 

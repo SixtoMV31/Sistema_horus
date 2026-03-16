@@ -15,7 +15,10 @@ namespace Sistema_Horus.Forms.administrador
         public Administrador()
         {
             InitializeComponent();
+            //Para no ocultar la barra de tareas
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+
         private void AbrirFormulario(object formsecundario)
         {
             if (this.PanelControl.Controls.Count > 0)
@@ -37,6 +40,11 @@ namespace Sistema_Horus.Forms.administrador
         private void button2_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new ProductosR());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

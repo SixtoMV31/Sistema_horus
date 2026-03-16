@@ -54,6 +54,7 @@
             // 
             // txtTipo
             // 
+            txtTipo.Anchor = AnchorStyles.None;
             txtTipo.Location = new Point(631, 66);
             txtTipo.Name = "txtTipo";
             txtTipo.Size = new Size(100, 23);
@@ -166,7 +167,7 @@
             // 
             // btnAddProductos
             // 
-            btnAddProductos.Location = new Point(323, 292);
+            btnAddProductos.Location = new Point(359, 299);
             btnAddProductos.Name = "btnAddProductos";
             btnAddProductos.Size = new Size(105, 49);
             btnAddProductos.TabIndex = 17;
@@ -195,6 +196,7 @@
             Controls.Add(txtUnidad);
             Controls.Add(txtTipo);
             Controls.Add(txtNameProducto);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ProductosR";
             Text = "ProductosR";
             ResumeLayout(false);

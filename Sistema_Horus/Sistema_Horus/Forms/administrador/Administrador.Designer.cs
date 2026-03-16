@@ -28,24 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             btnEmpleado = new Button();
             pictureBox2 = new PictureBox();
             button2 = new Button();
             button3 = new Button();
             PanelControl = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label1 = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            PanelControl.SuspendLayout();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.FromArgb(20, 23, 32);
-            pictureBox1.Location = new Point(-3, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(181, 452);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // btnEmpleado
             // 
@@ -105,45 +97,67 @@
             button3.ImageAlign = ContentAlignment.MiddleLeft;
             button3.Location = new Point(12, 318);
             button3.Name = "button3";
-            button3.Size = new Size(166, 40);
+            button3.Size = new Size(163, 40);
             button3.TabIndex = 6;
             button3.Text = "Ingresar correo";
             button3.UseVisualStyleBackColor = false;
             // 
             // PanelControl
             // 
-            PanelControl.Location = new Point(175, 0);
+            PanelControl.Controls.Add(label1);
+            PanelControl.Location = new Point(181, 33);
             PanelControl.Name = "PanelControl";
-            PanelControl.Size = new Size(625, 452);
+            PanelControl.Size = new Size(621, 463);
             PanelControl.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(26, 172);
+            label1.Name = "label1";
+            label1.Size = new Size(531, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Esto es un panel implementado donde se implementaran los formularios de cada boton presionado";
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.None;
+            panel1.BackColor = Color.FromArgb(20, 23, 32);
+            panel1.ForeColor = Color.Cornsilk;
+            panel1.Location = new Point(-3, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(181, 487);
+            panel1.TabIndex = 2;
+            panel1.Paint += panel1_Paint;
             // 
             // Administrador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(890, 484);
             Controls.Add(PanelControl);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(pictureBox2);
             Controls.Add(btnEmpleado);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             Name = "Administrador";
             Text = "Administrador";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            PanelControl.ResumeLayout(false);
+            PanelControl.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Button btnEmpleado;
         private PictureBox pictureBox2;
         private Button button2;
         private Button button3;
         private Panel PanelControl;
+        private Panel panel1;
+        private Label label1;
     }
 }

@@ -36,6 +36,7 @@
             Pa_user = new Panel();
             Tb_User = new TextBox();
             btnIniciar_sesion = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -122,11 +123,22 @@
             btnIniciar_sesion.UseVisualStyleBackColor = false;
             btnIniciar_sesion.Click += btnIniciar_sesion_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(422, 39);
+            button1.Name = "button1";
+            button1.Size = new Size(110, 46);
+            button1.TabIndex = 8;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(btnIniciar_sesion);
             Controls.Add(Pa_user);
             Controls.Add(pictureBox4);
@@ -157,5 +169,6 @@
         private Panel Pa_user;
         private TextBox Tb_User;
         private Button btnIniciar_sesion;
+        private Button button1;
     }
 }
