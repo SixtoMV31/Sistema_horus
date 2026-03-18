@@ -88,20 +88,25 @@ namespace Sistema_Horus
         private void btnIniciar_sesion_Click(object sender, EventArgs e)
         {
             CRUD crud = new CRUD();
-            string rol = crud.Login(Tb_User.Text, tb_contra.Text);
-            if (rol == null)
+            Empleados usuario = crud.Login(Tb_User.Text, tb_contra.Text);
+
+            if (usuario == null)
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
                 return;
             }
-            this.Hide();
-            if (rol == "Administrador")
+            
+              SesionAbierta.Id_usuario = usuario.Id_Usuarios;
+              SesionAbierta.Nombre = usuario.Nombre;
+            SesionAbierta.Rol = usuario.Rol;
+
+            if (usuario.Rol == "Administrador")
             {
                 Administrador FormAdmi = new Administrador();
                 FormAdmi.Show();
 
             }
-            else if (rol == "Empleado")
+            else if (usuario.Rol == "Empleado")
             {
                 OpcionesEmpleadocs opcionesEmpleado = new OpcionesEmpleadocs();
                 opcionesEmpleado.Show();

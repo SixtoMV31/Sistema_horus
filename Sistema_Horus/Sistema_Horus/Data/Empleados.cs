@@ -11,6 +11,7 @@ namespace Sistema_Horus.Data
     public class Empleados
     {
         // Tabla de Usuarios
+        public int Id_Usuarios { get; set; }
         public string Nombre { get; set; }
         public string A_paterno { get; set; }
         public string A_materno { get; set; }
@@ -23,9 +24,10 @@ namespace Sistema_Horus.Data
 
         public Empleados() { }
 
-        public Empleados(string pNombre, string pA_paterno, string pA_materno, string pUsuario, string pContrasena, string pRol)
+        public Empleados(int pId,string pNombre, string pA_paterno, string pA_materno, string pUsuario, string pContrasena, string pRol)
 
         {
+            this.Id_Usuarios = pId;
             this.Nombre = pNombre;
             this.A_paterno = pA_paterno;
             this.A_materno = pA_materno;
@@ -38,6 +40,8 @@ namespace Sistema_Horus.Data
     public class RegistrarClientes
     {
         //Tabla Ingresar Clientes
+
+        public int Id_Clientes { get; set; }
         public string NombreCliente { get; set; }
         public string A_PaternoCliente { get; set; }
         public string A_MaternoCliente { get; set; }
@@ -58,6 +62,13 @@ namespace Sistema_Horus.Data
             this.Fecha_Registro = Cli_Registro_Cliente;
             this.Detalle_Clientte = Cli_Detalle;
         }
+       
+    }
+    public static class SesionAbierta
+    {
+        public static int Id_usuario { get; set; }
+        public static string Nombre { get; set; }
+        public static string Rol { get; set; }
     }
 
 }

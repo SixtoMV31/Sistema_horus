@@ -1,9 +1,11 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Sistema_Horus.Data
 {
@@ -39,27 +41,29 @@ namespace Sistema_Horus.Data
 
 
         // Consulta a BD para usuario y password.
-        public string Login(string usuario,string contrasena)
+        public Empleados Login(string usuario,string contrasena)
         {
             try
             {
                using (SqlConnection conn = _conexion.ObtenerConexion())
                 {
                     conn.Open();
-                    string query = "SELECT rol FROM Usuarios WHERE Usuario=@usuario AND Contrasena=@contrasena";
+                    string query = "SELECT Id_usuario,Nombre, Rol FROM Usuarios WHERE Usuario=@usuario AND Contrasena=@contrasena";
                     using (SqlCommand cmd = new SqlCommand(query, conn)) 
                     {
                         cmd.Parameters.AddWithValue("@usuario", usuario);
                         cmd.Parameters.AddWithValue("@contrasena", contrasena);
-                        object resultado =cmd.ExecuteScalar();
-                        if(resultado != null)
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
                         {
-                            return resultado.ToString();
+                            Empleados p = new Empleados();
+                            p.Id_Usuarios = Convert.ToInt32(reader["Id_Usuario"]);
+                            p.Nombre = reader["Nombre"].ToString();
+                            p.Rol = reader["Rol"].ToString();
+                            return p;
                         }
                         else
-                        
                             return null;
-                        
                     }
                 } 
 
@@ -89,6 +93,86 @@ namespace Sistema_Horus.Data
                 retorno = comando.ExecuteNonQuery();
             }
             return retorno;
+        }
+        
+        public AutoCompleteStringCollection ObtenerNombreClientes()
+        {
+            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                DataTable datos = new DataTable();
+                SqlDataAdapter sqlData = new SqlDataAdapter("SELECT* FROM Clientes", conn);
+                sqlData.Fill(datos);
+                for (int i = 0;i<datos.Rows.Count;i++)
+                {
+                    lista.Add(datos.Rows[i]["Nombre"].ToString());
+                    lista.Add(datos.Rows[i]["A_paterno"].ToString());
+                    
+                }
+            }
+            return lista;
+        }
+        public RegistrarClientes BuscarCliente(string nombre)
+        {
+            RegistrarClientes cliente = null;
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "SELECT Id_clientes, Nombre, A_paterno, A_materno, Telefono, N_local " +
+                    "FROM Clientes WHERE Nombre = @Nombre", conn);
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    cliente = new RegistrarClientes();
+                    cliente.Id_Clientes = Convert.ToInt32(reader["Id_clientes"]);
+                    cliente.NombreCliente = reader["Nombre"].ToString();
+                    cliente.A_PaternoCliente = reader["A_paterno"].ToString();
+                    cliente.A_MaternoCliente = reader["A_materno"].ToString();
+                    cliente.TelefonoCliente = reader["Telefono"].ToString();
+                    cliente.Nombre_Local = reader["N_local"].ToString();
+                }
+            }
+            return cliente;
+        }
+        public AutoCompleteStringCollection BuscarProductos()
+        {
+            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                DataTable datos = new DataTable();
+                SqlDataAdapter sqlData = new SqlDataAdapter("SELECT* FROM Productos", conn);
+                sqlData.Fill(datos);
+                for (int i = 0; i < datos.Rows.Count; i++)
+                {
+                    lista.Add(datos.Rows[i]["Nombre_Producto"].ToString());
+
+                }
+            }
+            return lista;
+        }
+        public AutoCompleteStringCollection BuscarModelo(string nombreProducto)
+        {
+            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
+            using (SqlConnection conn = _conexion.ObtenerConexion())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT DISTINCT Modelo_Telefono FROM Productos WHERE Nombre_producto =@nombre", conn);
+                cmd.Parameters.AddWithValue(@"Nombre", nombreProducto);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while(reader.Read())
+                {
+                    lista.Add(reader["Modelo_Telefono"].ToString());
+
+                }
+                return lista;
+
+            }
+            
         }
     }
 }
